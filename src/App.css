@@ -4,9 +4,49 @@
 
 }
 .section {
-  margin-top: 60px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.header {
+  position: relative;
+  padding-top: 56px; /* Adjust this according to the height of your fixed navbar */
+  height: 200px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* To ensure the pseudo-element stays within the header */
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/src/components/images/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Set the opacity here */
+  z-index: 1; /* Ensure the pseudo-element is behind the content */
+}
+
+.header .navbar, .header-banner {
+  z-index: 2; /* Ensure the content is above the pseudo-element */
+}
+
+.header-banner {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.header-banner .alert {
+  margin-bottom: 0;
 }
 
 .closable-banner-title {
