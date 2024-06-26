@@ -1,13 +1,12 @@
 import React from 'react'
-import Banner from '../inc/Banner'
+import Header from '../inc/Header'
 
 const Home = () => {
   return (
     <section className='section'>
-    <div className='container p-4'>
-      <Banner />
+    
+      <Header />
       
-    </div>
     </section>
   )
 }
