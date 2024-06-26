@@ -5,9 +5,14 @@ import Banner from './Banner';
 
 const Header = () => {
     return (
-        <header>
+        <header className='header'>
             <Navbar />
-            <Banner />
+            <div className="header-banner">
+                <Banner />
+            </div>
+            <h1>FlyStudyThrive navigates your journey to top colleges with a
+98% success rate.
+</h1>
         </header>
     );
 };
