@@ -16,8 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* To ensure the pseudo-element stays within the header */
-}
+  overflow: hidden; 
 
 .header::before {
   content: "";
