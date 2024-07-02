@@ -10,8 +10,8 @@
 
 .header {
   position: relative;
-  padding-top: 56px; /* Adjust this according to the height of your fixed navbar */
-  height: 200px; /* Adjust the height as needed */
+  padding-top: 56px; 
+  height: 200px; 
   display: flex;
   flex-direction: column;
   align-items: center;
